@@ -1,0 +1,39 @@
+
+.claimer-container {
+  width:100%;
+  text-align:center;
+}
+
+.claimer-left {
+  float:left;
+  width: auto;
+}
+
+.claimer-center {
+  display: inline-block;
+  width: auto;
+}
+
+.claimer-right {
+  float:right;
+  width:auto;
+}
+
+form {
+  margin-bottom: 0em;
+}
+
+body { padding-top: 70px; }
+
+.fifty {
+  float:left;
+  width:50%
+}
+
+.dropdown-menu-large {
+  min-width: 400px;
+}
+
+.CodeMirror-merge {
+  height : 100%
+}

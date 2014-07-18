@@ -1,0 +1,53 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-primary navbar-btn disable">{{name}} &raquo;</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default navbar-btn dropdown-toggle"
+            data-toggle="dropdown"
+            ng-click="loadEnvironments()">
+       {{environment.value.name || 'Environment'}}
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="result in environment.possibleValues">
+        <a href="#" ng-click="setEnvironment(result)">{{result.name}}</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"
+            ng-click="loadBranches()">
+      {{branch.value.name || 'Branch'}}
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="result in branch.possibleValues">
+        <a href="#" ng-click="setBranch(result)">{{result.name}}</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default navbar-btn" data-toggle="dropdown"
+            ng-click="loadCommits()">
+      {{commit.value.sha || 'Commit' | limitTo : 8}}...
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+      <li ng-repeat="result in commit.possibleValues">
+        <a href="#" ng-click="setCommit(result)">{{result.sha}}</a></li>
+    </ul>
+  </div>
+  <div class="btn-group">
+    <button type="button" class="btn btn-default navbar-btn dropdown-toggle" data-toggle="dropdown"
+            ng-click="loadTree()">
+      {{tree.path || 'Tree'}}
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right dropdown-menu-large" role="menu">
+      <treecontrol class="tree-classic"
+                   tree-model="tree.possibleValues"
+                   options="treeOptions"
+                   on-selection="showSelected(node)"
+                   selected-node="node1">
+        {{node.path}}
+      </treecontrol>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<groups xmlns="http://www.isdc.ro/wro">
+  <group name="all">
+    <js>classpath:META-INF/resources/webjars/jquery/2.1.1/jquery.js</js>
+
+    <js>classpath:META-INF/resources/webjars/angularjs/1.2.19/angular.js</js>
+    <js>classpath:META-INF/resources/webjars/angularjs/1.2.19/angular-resource.js</js>
+    <css>classpath:META-INF/resources/webjars/angularjs/1.2.19/angular-csp.css</css>
+
+    <js>classpath:META-INF/resources/webjars/bootstrap/3.2.0/js/bootstrap.js</js>
+    <css>classpath:META-INF/resources/webjars/bootstrap/3.2.0/css/bootstrap.css</css>
+    <css>classpath:META-INF/resources/webjars/bootstrap/3.2.0/css/bootstrap-theme.css</css>
+
+    <js>http://cdnjs.cloudflare.com/ajax/libs/diff_match_patch/20121119/diff_match_patch.js</js>
+    <js>classpath:META-INF/resources/webjars/codemirror/4.3/lib/codemirror.js</js>
+    <js>classpath:META-INF/resources/webjars/codemirror/4.3/mode/xml/xml.js</js>
+    <js>classpath:META-INF/resources/webjars/codemirror/4.3/addon/merge/merge.js</js>
+    <css>classpath:META-INF/resources/webjars/codemirror/4.3/lib/codemirror.css</css>
+    <css>classpath:META-INF/resources/webjars/codemirror/4.3/addon/merge/merge.css</css>
+
+    <js>classpath:META-INF/resources/webjars/angular-tree-control/0.1.5/angular-tree-control.js</js>
+    <css>classpath:META-INF/resources/webjars/angular-tree-control/0.1.5/css/tree-control.css</css>
+    <css>classpath:META-INF/resources/webjars/angular-tree-control/0.1.5/css/tree-control-attribute.css</css>
+
+    <js>/scripts/*.js</js>
+    <css>/styles/main.css</css>
+  </group>
+</groups>
