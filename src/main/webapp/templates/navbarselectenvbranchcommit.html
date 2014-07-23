@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default {{class}}" role="navigation">
+    <div class="container-fluid">
+        <div class="claimer-container">
+            <div class="claimer-left">
+                <selectenvbranchcommit name="From"></selectenvbranchcommit>
+            </div>
+            <div class="claimer-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default navbar-btn" data-toggle="modal"
+                            data-target="#loginModal">
+                        {{getUsername() || 'Login'}}
+                    </button>
+                </div>
+            </div>
+            </button>
+            <div class="claimer-right">
+                <selectenvbranchcommit name="To"></selectenvbranchcommit>
+            </div>
+        </div>
+    </div>
+</nav>
